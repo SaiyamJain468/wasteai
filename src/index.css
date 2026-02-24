@@ -54,18 +54,11 @@ button, div, section, header, footer, nav, input, select, textarea {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .sidebar-mobile {
-    transform: translateX(-240px);
-    z-index: 101;
+  .main-content {
+    margin-left: 0 !important;
   }
   
-  .sidebar-mobile.open {
-    transform: translateX(0);
-  }
-}
-
-@media (min-width: 769px) {
-  .sidebar-mobile {
-    transform: translateX(0) !important;
+  .mobile-overlay {
+    display: block !important;
   }
 }

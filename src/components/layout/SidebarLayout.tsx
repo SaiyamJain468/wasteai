@@ -13,10 +13,8 @@ export default function SidebarLayout({ children }: SidebarLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div style={{ backgroundColor: colors.bg, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <div className={`sidebar-mobile ${sidebarOpen ? 'open' : ''}`}>
-        <Sidebar />
-      </div>
+    <div style={{ backgroundColor: colors.bg, minHeight: '100vh' }}>
+      <Sidebar />
       {sidebarOpen && (
         <div
           onClick={() => setSidebarOpen(false)}
@@ -25,20 +23,21 @@ export default function SidebarLayout({ children }: SidebarLayoutProps) {
             inset: 0,
             backgroundColor: 'rgba(0,0,0,0.8)',
             zIndex: 99,
+            display: 'none',
           }}
+          className="mobile-overlay"
         />
       )}
       <TopBar onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
       <main
         style={{
-          marginLeft: '0',
+          marginLeft: '240px',
           paddingTop: '56px',
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
+          minHeight: '100vh',
         }}
+        className="main-content"
       >
-        <div style={{ flex: 1 }}>{children}</div>
+        {children}
         <Footer />
       </main>
     </div>

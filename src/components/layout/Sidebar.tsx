@@ -32,10 +32,7 @@ export default function Sidebar() {
         display: 'flex',
         flexDirection: 'column',
         zIndex: 100,
-        transform: 'translateX(0)',
-        transition: 'transform 150ms',
       }}
-      className="sidebar-mobile"
     >
       {/* Logo */}
       <div style={{ padding: '20px 16px', borderBottom: `3px solid ${colors.border}` }}>
