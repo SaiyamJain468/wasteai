@@ -54,11 +54,69 @@ button, div, section, header, footer, nav, input, select, textarea {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .main-content {
-    margin-left: 0 !important;
+  /* Hide sidebar on mobile */
+  .sidebar-desktop {
+    display: none !important;
   }
   
+  /* Full width content on mobile */
+  .main-content {
+    margin-left: 0 !important;
+    padding: 56px 16px 16px !important;
+  }
+  
+  /* Mobile overlay */
   .mobile-overlay {
     display: block !important;
+  }
+  
+  /* Adjust grid layouts for mobile */
+  [style*="display: grid"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Stack flex items on mobile */
+  [style*="display: flex"][style*="gap"] {
+    flex-wrap: wrap !important;
+  }
+  
+  /* Reduce padding on mobile */
+  [style*="padding: 40px"] {
+    padding: 20px !important;
+  }
+  
+  [style*="padding: 32px"] {
+    padding: 16px !important;
+  }
+  
+  /* Smaller font sizes on mobile */
+  [style*="fontSize: '48px'"] {
+    font-size: 32px !important;
+  }
+  
+  [style*="fontSize: '36px'"] {
+    font-size: 24px !important;
+  }
+  
+  [style*="fontSize: '32px'"] {
+    font-size: 20px !important;
+  }
+  
+  /* Footer responsive */
+  footer [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  footer [style*="flexWrap"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+
+/* Desktop only */
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
   }
 }

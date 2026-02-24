@@ -33,6 +33,7 @@ export default function Sidebar() {
         flexDirection: 'column',
         zIndex: 100,
       }}
+      className="sidebar-desktop"
     >
       {/* Logo */}
       <div style={{ padding: '20px 16px', borderBottom: `3px solid ${colors.border}` }}>
