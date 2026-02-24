@@ -198,6 +198,7 @@ export default function Footer() {
             <span style={{ color: colors.border }}>|</span>
             <div
               style={{
+
                 fontSize: '13px',
                 fontWeight: 700,
                 color: colors.textSecondary,
