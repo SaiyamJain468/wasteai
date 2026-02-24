@@ -1,6 +1,7 @@
 import { ReactNode, useState } from 'react';
 import Sidebar from './Sidebar';
 import TopBar from './TopBar';
+import Footer from '../Footer';
 import { useTheme } from '../../hooks/useTheme';
 
 interface SidebarLayoutProps {
@@ -32,10 +33,11 @@ export default function SidebarLayout({ children }: SidebarLayoutProps) {
         style={{
           marginLeft: '0',
           paddingTop: '56px',
-          minHeight: '100vh',
+          minHeight: 'calc(100vh - 56px)',
         }}
       >
         {children}
+        <Footer />
       </main>
     </div>
   );
