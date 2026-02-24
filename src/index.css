@@ -55,9 +55,13 @@ button, div, section, header, footer, nav, input, select, textarea {
   background: #FF0000;
 }
 
-/* Mobile First - Base Styles */
+/* Mobile First - Hide desktop sidebar, show mobile drawer */
 .sidebar-desktop {
   display: none;
+}
+
+.sidebar-mobile {
+  display: block;
 }
 
 .main-content {
@@ -74,13 +78,17 @@ button, div, section, header, footer, nav, input, select, textarea {
     display: flex !important;
   }
   
+  .sidebar-mobile {
+    display: none !important;
+  }
+  
+  .mobile-overlay {
+    display: none !important;
+  }
+  
   .main-content {
     margin-left: 240px !important;
     padding: 56px 40px 40px !important;
-  }
-  
-  .mobile-only {
-    display: none !important;
   }
 }
 
@@ -153,11 +161,6 @@ button, div, section, header, footer, nav, input, select, textarea {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 12px !important;
-  }
-  
-  /* Hide desktop-only elements */
-  div[style*="display: 'flex'"][style*="gap: '16px'"] > div:last-child {
-    display: none;
   }
   
   /* Footer mobile */

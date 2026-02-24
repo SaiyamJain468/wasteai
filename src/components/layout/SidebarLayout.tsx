@@ -14,7 +14,28 @@ export default function SidebarLayout({ children }: SidebarLayoutProps) {
 
   return (
     <div style={{ backgroundColor: colors.bg, minHeight: '100vh' }}>
-      <Sidebar />
+      {/* Desktop Sidebar */}
+      <div className="sidebar-desktop">
+        <Sidebar />
+      </div>
+      
+      {/* Mobile Sidebar Drawer */}
+      <div
+        className="sidebar-mobile"
+        style={{
+          position: 'fixed',
+          left: sidebarOpen ? 0 : '-240px',
+          top: 0,
+          bottom: 0,
+          width: '240px',
+          zIndex: 101,
+          transition: 'left 150ms',
+        }}
+      >
+        <Sidebar />
+      </div>
+      
+      {/* Mobile Overlay */}
       {sidebarOpen && (
         <div
           onClick={() => setSidebarOpen(false)}
@@ -22,12 +43,12 @@ export default function SidebarLayout({ children }: SidebarLayoutProps) {
             position: 'fixed',
             inset: 0,
             backgroundColor: 'rgba(0,0,0,0.8)',
-            zIndex: 99,
-            display: 'none',
+            zIndex: 100,
           }}
           className="mobile-overlay"
         />
       )}
+      
       <TopBar onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
       <main
         style={{
