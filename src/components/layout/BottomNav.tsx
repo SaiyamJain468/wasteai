@@ -30,6 +30,8 @@ export default function BottomNav() {
         display: 'grid',
         gridTemplateColumns: 'repeat(6, 1fr)',
         zIndex: 100,
+        width: '100%',
+        maxWidth: '100vw',
       }}
       className="mobile-bottom-nav"
     >

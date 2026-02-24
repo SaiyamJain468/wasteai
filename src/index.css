@@ -69,7 +69,10 @@ button, div, section, header, footer, nav, input, select, textarea {
 }
 
 .mobile-bottom-nav {
-  display: grid;
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr) !important;
+  width: 100% !important;
+  max-width: 100vw !important;
 }
 
 .main-content {
@@ -105,20 +108,32 @@ button, div, section, header, footer, nav, input, select, textarea {
     width: 100% !important;
   }
   
-  /* Contain all children */
-  .main-content > * {
+  /* Protect bottom nav from overrides */
+  .mobile-bottom-nav {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  
+  /* Contain all children except nav */
+  .main-content > *:not(nav) {
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
   
-  /* Force all divs to stay within viewport */
-  div {
+  /* Force all divs to stay within viewport except nav */
+  div:not(.mobile-bottom-nav):not(.mobile-bottom-nav *) {
     max-width: 100vw !important;
   }
   
-  /* Force single column grids */
-  [style*="display: grid"],
-  [style*="gridTemplateColumns"] {
+  /* Force single column grids except bottom nav */
+  [style*="display: grid"]:not(.mobile-bottom-nav),
+  [style*="gridTemplateColumns"]:not(.mobile-bottom-nav) {
     grid-template-columns: 1fr !important;
     width: 100% !important;
   }
