@@ -107,6 +107,13 @@ button, div, section, header, footer, nav, input, select, textarea {
   .main-content {
     margin-left: 240px !important;
     padding: 56px 40px 40px !important;
+    max-width: calc(100vw - 240px) !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Prevent desktop overflow */
+  .main-content > * {
+    max-width: 100% !important;
   }
 }
 

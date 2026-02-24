@@ -196,20 +196,22 @@ export default function Footer() {
               GITHUB
             </a>
             <span style={{ color: colors.border }}>|</span>
-            <div
+            <a
+              href="https://www.instagram.com/saiyamjain343/"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
-
                 fontSize: '13px',
                 fontWeight: 700,
                 color: colors.textSecondary,
-                cursor: 'pointer',
+                textDecoration: 'none',
                 transition: 'all 150ms',
               }}
               onMouseEnter={(e) => (e.currentTarget.style.color = colors.primary)}
               onMouseLeave={(e) => (e.currentTarget.style.color = colors.textSecondary)}
             >
               DEVELOPER
-            </div>
+            </a>
           </div>
         </div>
       </div>
