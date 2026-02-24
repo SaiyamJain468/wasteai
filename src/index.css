@@ -9,6 +9,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -21,6 +22,13 @@ body {
   color: #FFFFFF;
   overflow-x: hidden;
   width: 100%;
+  max-width: 100vw;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .font-mono {
@@ -66,7 +74,7 @@ button, div, section, header, footer, nav, input, select, textarea {
 
 .main-content {
   margin-left: 0 !important;
-  padding: 56px 12px 76px !important; /* Extra padding for bottom nav */
+  padding: 56px 12px 76px !important;
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
@@ -88,89 +96,146 @@ button, div, section, header, footer, nav, input, select, textarea {
   }
 }
 
-/* Mobile Specific Overrides */
+/* Mobile Specific - Aggressive Containment */
 @media (max-width: 768px) {
-  /* Prevent horizontal scroll */
-  body, html, #root {
-    overflow-x: hidden;
-    max-width: 100vw;
+  /* Prevent any horizontal scroll */
+  body, html, #root, .main-content {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+  
+  /* Contain all children */
+  .main-content > * {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Force all divs to stay within viewport */
+  div {
+    max-width: 100vw !important;
   }
   
   /* Force single column grids */
-  div[style*="gridTemplateColumns"] {
+  [style*="display: grid"],
+  [style*="gridTemplateColumns"] {
     grid-template-columns: 1fr !important;
+    width: 100% !important;
   }
   
-  /* Reduce all large padding */
-  div[style*="padding: 40px"] {
+  /* Reduce all large padding and margins */
+  [style*="padding: 40px"] {
     padding: 16px !important;
   }
   
-  div[style*="padding: 32px"] {
+  [style*="padding: 32px"] {
     padding: 12px !important;
   }
   
-  div[style*="padding: 24px"] {
+  [style*="padding: 24px"] {
     padding: 12px !important;
+  }
+  
+  [style*="margin: 40px"] {
+    margin: 16px !important;
+  }
+  
+  [style*="marginBottom: '40px'"] {
+    margin-bottom: 16px !important;
   }
   
   /* Reduce font sizes */
-  h1[style*="fontSize: '48px'"],
-  div[style*="fontSize: '48px'"] {
+  [style*="fontSize: '48px'"] {
     font-size: 24px !important;
   }
   
-  div[style*="fontSize: '36px'"] {
+  [style*="fontSize: '36px'"] {
     font-size: 20px !important;
   }
   
-  div[style*="fontSize: '32px'"] {
+  [style*="fontSize: '32px'"] {
     font-size: 18px !important;
   }
   
-  div[style*="fontSize: '24px'"] {
+  [style*="fontSize: '24px'"] {
     font-size: 16px !important;
   }
   
+  [style*="fontSize: '20px'"] {
+    font-size: 14px !important;
+  }
+  
   /* Reduce gaps */
-  div[style*="gap: '32px'"] {
+  [style*="gap: '32px'"] {
     gap: 12px !important;
   }
   
-  div[style*="gap: '24px'"] {
+  [style*="gap: '24px'"] {
     gap: 12px !important;
+  }
+  
+  [style*="gap: '16px'"] {
+    gap: 8px !important;
   }
   
   /* Make images responsive */
   img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100% !important;
+    height: auto !important;
   }
   
-  /* Reduce upload zone height */
-  div[style*="height: '500px'"] {
+  /* Reduce heights */
+  [style*="height: '500px'"] {
     height: 300px !important;
   }
   
+  [style*="height: '400px'"] {
+    height: 250px !important;
+  }
+  
+  [style*="height: '300px'"] {
+    height: 200px !important;
+  }
+  
   /* Stack flex items */
-  div[style*="display: flex"][style*="justifyContent: 'space-between'"] {
+  [style*="display: flex"] {
+    flex-wrap: wrap !important;
+  }
+  
+  [style*="justifyContent: 'space-between'"] {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 12px !important;
   }
   
-  /* Footer mobile */
-  footer {
-    padding: 20px 12px 80px !important; /* Extra padding for bottom nav */
+  /* Reduce max-widths */
+  [style*="maxWidth: '1600px'"],
+  [style*="maxWidth: '1400px'"],
+  [style*="maxWidth: '1200px'"] {
+    max-width: 100% !important;
   }
   
-  footer div[style*="gridTemplateColumns"] {
+  /* Footer mobile */
+  footer {
+    padding: 20px 12px 80px !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+  
+  footer [style*="gridTemplateColumns"] {
     grid-template-columns: 1fr !important;
     gap: 20px !important;
   }
   
-  footer div[style*="flexWrap"] {
+  footer [style*="flexWrap"] {
     flex-direction: column !important;
     align-items: flex-start !important;
+  }
+  
+  /* Tables responsive */
+  table {
+    display: block !important;
+    overflow-x: auto !important;
+    max-width: 100% !important;
   }
 }
