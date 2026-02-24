@@ -55,18 +55,18 @@ button, div, section, header, footer, nav, input, select, textarea {
   background: #FF0000;
 }
 
-/* Mobile First - Hide desktop sidebar, show mobile drawer */
+/* Mobile First - Hide desktop sidebar, show bottom nav */
 .sidebar-desktop {
   display: none;
 }
 
-.sidebar-mobile {
-  display: block;
+.mobile-bottom-nav {
+  display: grid;
 }
 
 .main-content {
   margin-left: 0 !important;
-  padding: 56px 12px 12px !important;
+  padding: 56px 12px 76px !important; /* Extra padding for bottom nav */
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
@@ -78,11 +78,7 @@ button, div, section, header, footer, nav, input, select, textarea {
     display: flex !important;
   }
   
-  .sidebar-mobile {
-    display: none !important;
-  }
-  
-  .mobile-overlay {
+  .mobile-bottom-nav {
     display: none !important;
   }
   
@@ -165,7 +161,7 @@ button, div, section, header, footer, nav, input, select, textarea {
   
   /* Footer mobile */
   footer {
-    padding: 20px 12px !important;
+    padding: 20px 12px 80px !important; /* Extra padding for bottom nav */
   }
   
   footer div[style*="gridTemplateColumns"] {

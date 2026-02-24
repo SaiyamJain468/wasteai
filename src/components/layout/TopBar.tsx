@@ -39,7 +39,9 @@ export default function TopBar({ onMenuClick }: TopBarProps) {
           border: 'none',
           cursor: 'pointer',
           color: colors.textPrimary,
+          display: 'none',
         }}
+        className="mobile-menu-btn"
       >
         <Menu size={24} strokeWidth={3} />
       </button>
