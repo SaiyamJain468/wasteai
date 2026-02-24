@@ -13,7 +13,7 @@ export default function SidebarLayout({ children }: SidebarLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div style={{ backgroundColor: colors.bg, minHeight: '100vh' }}>
+    <div style={{ backgroundColor: colors.bg, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <div className={`sidebar-mobile ${sidebarOpen ? 'open' : ''}`}>
         <Sidebar />
       </div>
@@ -33,10 +33,12 @@ export default function SidebarLayout({ children }: SidebarLayoutProps) {
         style={{
           marginLeft: '0',
           paddingTop: '56px',
-          minHeight: 'calc(100vh - 56px)',
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
         }}
       >
-        {children}
+        <div style={{ flex: 1 }}>{children}</div>
         <Footer />
       </main>
     </div>

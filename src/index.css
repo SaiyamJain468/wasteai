@@ -56,9 +56,16 @@ button, div, section, header, footer, nav, input, select, textarea {
 @media (max-width: 768px) {
   .sidebar-mobile {
     transform: translateX(-240px);
+    z-index: 101;
   }
   
   .sidebar-mobile.open {
     transform: translateX(0);
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar-mobile {
+    transform: translateX(0) !important;
   }
 }
