@@ -138,9 +138,19 @@ button, div, section, header, footer, nav, input, select, textarea {
     width: 100% !important;
   }
   
+  /* Hide desktop-only elements on mobile */
+  [style*="display: 'flex'"][style*="gap: '16px'"] > div:nth-child(2) {
+    display: none !important;
+  }
+  
+  /* Hide instruction badges on mobile */
+  [style*="display: 'flex'"][style*="gap: '16px'"] > div[style*="padding: '12px 20px'"] {
+    display: none !important;
+  }
+  
   /* Reduce all large padding and margins */
   [style*="padding: 40px"] {
-    padding: 16px !important;
+    padding: 12px !important;
   }
   
   [style*="padding: 32px"] {
@@ -151,33 +161,53 @@ button, div, section, header, footer, nav, input, select, textarea {
     padding: 12px !important;
   }
   
+  [style*="padding: 20px"] {
+    padding: 10px !important;
+  }
+  
   [style*="margin: 40px"] {
-    margin: 16px !important;
+    margin: 12px !important;
   }
   
   [style*="marginBottom: '40px'"] {
     margin-bottom: 16px !important;
   }
   
-  /* Reduce font sizes */
-  [style*="fontSize: '48px'"] {
-    font-size: 24px !important;
+  [style*="marginBottom: '32px'"] {
+    margin-bottom: 12px !important;
   }
   
-  [style*="fontSize: '36px'"] {
+  [style*="marginTop: '32px'"] {
+    margin-top: 12px !important;
+  }
+  
+  /* Reduce font sizes */
+  [style*="fontSize: '48px'"] {
     font-size: 20px !important;
   }
   
-  [style*="fontSize: '32px'"] {
+  [style*="fontSize: '36px'"] {
     font-size: 18px !important;
   }
   
-  [style*="fontSize: '24px'"] {
+  [style*="fontSize: '32px'"] {
     font-size: 16px !important;
+  }
+  
+  [style*="fontSize: '24px'"] {
+    font-size: 14px !important;
   }
   
   [style*="fontSize: '20px'"] {
     font-size: 14px !important;
+  }
+  
+  [style*="fontSize: '16px'"] {
+    font-size: 13px !important;
+  }
+  
+  [style*="fontSize: '14px'"] {
+    font-size: 12px !important;
   }
   
   /* Reduce gaps */
@@ -186,7 +216,11 @@ button, div, section, header, footer, nav, input, select, textarea {
   }
   
   [style*="gap: '24px'"] {
-    gap: 12px !important;
+    gap: 10px !important;
+  }
+  
+  [style*="gap: '20px'"] {
+    gap: 10px !important;
   }
   
   [style*="gap: '16px'"] {
@@ -201,19 +235,43 @@ button, div, section, header, footer, nav, input, select, textarea {
   
   /* Reduce heights */
   [style*="height: '500px'"] {
-    height: 300px !important;
-  }
-  
-  [style*="height: '400px'"] {
     height: 250px !important;
   }
   
-  [style*="height: '300px'"] {
+  [style*="height: '400px'"] {
     height: 200px !important;
   }
   
+  [style*="height: '300px'"] {
+    height: 180px !important;
+  }
+  
+  [style*="height: '72px'"] {
+    height: 56px !important;
+  }
+  
+  [style*="height: '64px'"] {
+    height: 48px !important;
+  }
+  
+  /* Reduce icon sizes */
+  svg[size="80"] {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  
+  svg[size="64"] {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  svg[size="40"] {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  
   /* Stack flex items */
-  [style*="display: flex"] {
+  [style*="display: flex"]:not(.mobile-bottom-nav):not(.mobile-bottom-nav *) {
     flex-wrap: wrap !important;
   }
   
@@ -252,5 +310,11 @@ button, div, section, header, footer, nav, input, select, textarea {
     display: block !important;
     overflow-x: auto !important;
     max-width: 100% !important;
+    font-size: 11px !important;
+  }
+  
+  table th, table td {
+    padding: 8px !important;
+    font-size: 11px !important;
   }
 }
