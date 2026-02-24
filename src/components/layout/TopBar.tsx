@@ -20,7 +20,7 @@ export default function TopBar({ onMenuClick }: TopBarProps) {
       style={{
         position: 'fixed',
         top: 0,
-        left: '240px',
+        left: 0,
         right: 0,
         height: '56px',
         backgroundColor: colors.topbar,
@@ -28,40 +28,36 @@ export default function TopBar({ onMenuClick }: TopBarProps) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '0 24px',
+        padding: '0 16px',
         zIndex: 90,
       }}
     >
       <button
         onClick={onMenuClick}
         style={{
-          display: 'none',
           background: 'none',
           border: 'none',
           cursor: 'pointer',
           color: colors.textPrimary,
         }}
-        className="md:hidden"
       >
         <Menu size={24} strokeWidth={3} />
       </button>
 
-      <div style={{ flex: 1 }} />
-
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         {/* Streak */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '8px',
-            padding: '8px 16px',
+            gap: '6px',
+            padding: '6px 12px',
             backgroundColor: colors.surface,
             border: `3px solid ${colors.primary}`,
           }}
         >
-          <Flame size={18} color={colors.primary} strokeWidth={3} />
-          <span className="font-mono" style={{ fontSize: '16px', fontWeight: 900, color: colors.primary }}>
+          <Flame size={16} color={colors.primary} strokeWidth={3} />
+          <span className="font-mono" style={{ fontSize: '14px', fontWeight: 900, color: colors.primary }}>
             {streak}
           </span>
         </div>
@@ -69,8 +65,8 @@ export default function TopBar({ onMenuClick }: TopBarProps) {
         {/* Notifications */}
         <button
           style={{
-            width: '40px',
-            height: '40px',
+            width: '36px',
+            height: '36px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -89,7 +85,7 @@ export default function TopBar({ onMenuClick }: TopBarProps) {
             e.currentTarget.style.color = colors.textSecondary;
           }}
         >
-          <Bell size={18} strokeWidth={3} />
+          <Bell size={16} strokeWidth={3} />
         </button>
       </div>
     </div>

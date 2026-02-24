@@ -32,21 +32,24 @@ export default function Sidebar() {
         display: 'flex',
         flexDirection: 'column',
         zIndex: 100,
+        transform: 'translateX(0)',
+        transition: 'transform 150ms',
       }}
+      className="sidebar-mobile"
     >
       {/* Logo */}
-      <div style={{ padding: '24px 20px', borderBottom: `3px solid ${colors.border}` }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ fontSize: '32px' }}>♻️</div>
+      <div style={{ padding: '20px 16px', borderBottom: `3px solid ${colors.border}` }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div style={{ fontSize: '28px' }}>♻️</div>
           <div>
-            <div style={{ fontSize: '20px', fontWeight: 900, color: colors.primary, letterSpacing: '1px' }}>WASTEAI</div>
-            <div style={{ fontSize: '10px', color: colors.textMuted, fontWeight: 700, letterSpacing: '2px' }}>CIVIC TECH</div>
+            <div style={{ fontSize: '18px', fontWeight: 900, color: colors.primary, letterSpacing: '1px' }}>WASTEAI</div>
+            <div style={{ fontSize: '9px', color: colors.textMuted, fontWeight: 700, letterSpacing: '1.5px' }}>CIVIC TECH</div>
           </div>
         </div>
       </div>
 
       {/* Navigation */}
-      <nav style={{ flex: 1, padding: '20px 12px', overflowY: 'auto' }}>
+      <nav style={{ flex: 1, padding: '16px 10px', overflowY: 'auto' }}>
         {navItems.map((item) => {
           const active = isActive(item.to);
           return (
@@ -56,16 +59,16 @@ export default function Sidebar() {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '12px',
-                padding: '14px 16px',
-                marginBottom: '8px',
+                gap: '10px',
+                padding: '12px 14px',
+                marginBottom: '6px',
                 textDecoration: 'none',
                 backgroundColor: active ? colors.activeNav : 'transparent',
                 border: `3px solid ${active ? colors.primary : 'transparent'}`,
                 color: active ? colors.primary : colors.textSecondary,
-                fontSize: '13px',
+                fontSize: '12px',
                 fontWeight: 800,
-                letterSpacing: '1px',
+                letterSpacing: '0.8px',
                 transition: 'all 150ms',
               }}
               onMouseEnter={(e) => {
@@ -81,28 +84,28 @@ export default function Sidebar() {
                 }
               }}
             >
-              <item.icon size={20} strokeWidth={3} />
+              <item.icon size={18} strokeWidth={3} />
               <span>{item.label}</span>
             </Link>
           );
         })}
 
-        <div style={{ height: '3px', backgroundColor: colors.border, margin: '20px 0' }} />
+        <div style={{ height: '3px', backgroundColor: colors.border, margin: '16px 0' }} />
 
         <Link
           to="/profile"
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '12px',
-            padding: '14px 16px',
-            marginBottom: '8px',
+            gap: '10px',
+            padding: '12px 14px',
+            marginBottom: '6px',
             textDecoration: 'none',
             border: '3px solid transparent',
             color: colors.textSecondary,
-            fontSize: '13px',
+            fontSize: '12px',
             fontWeight: 800,
-            letterSpacing: '1px',
+            letterSpacing: '0.8px',
             transition: 'all 150ms',
           }}
           onMouseEnter={(e) => {
@@ -114,7 +117,7 @@ export default function Sidebar() {
             e.currentTarget.style.color = colors.textSecondary;
           }}
         >
-          <User size={20} strokeWidth={3} />
+          <User size={18} strokeWidth={3} />
           <span>PROFILE</span>
         </Link>
 
@@ -124,14 +127,14 @@ export default function Sidebar() {
             width: '100%',
             display: 'flex',
             alignItems: 'center',
-            gap: '12px',
-            padding: '14px 16px',
+            gap: '10px',
+            padding: '12px 14px',
             border: '3px solid transparent',
             backgroundColor: 'transparent',
             color: colors.textSecondary,
-            fontSize: '13px',
+            fontSize: '12px',
             fontWeight: 800,
-            letterSpacing: '1px',
+            letterSpacing: '0.8px',
             cursor: 'pointer',
             transition: 'all 150ms',
           }}
@@ -144,7 +147,7 @@ export default function Sidebar() {
             e.currentTarget.style.color = colors.textSecondary;
           }}
         >
-          <LogOut size={20} strokeWidth={3} />
+          <LogOut size={18} strokeWidth={3} />
           <span>SIGN OUT</span>
         </button>
       </nav>

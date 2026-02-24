@@ -51,3 +51,14 @@ button, div, section, header, footer, nav, input, select, textarea {
 ::-webkit-scrollbar-thumb:hover {
   background: #FF0000;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sidebar-mobile {
+    transform: translateX(-240px);
+  }
+  
+  .sidebar-mobile.open {
+    transform: translateX(0);
+  }
+}
