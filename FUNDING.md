@@ -12,14 +12,14 @@ Build a sustainable waste management platform that creates environmental impact 
 
 ## 📊 Financial Projections
 
-### Year 1 (2024) - User Acquisition
+### Year 1 (2026) - User Acquisition
 - **Revenue**: $0
 - **Users**: 10,000
 - **Focus**: Product-market fit
 - **Costs**: $15K (hosting, marketing)
 - **Funding Need**: $50K seed round
 
-### Year 2 (2025) - Monetization
+### Year 2 (2026) - Monetization
 - **Revenue**: $100K
 - **Users**: 50,000
 - **Focus**: Enterprise partnerships
@@ -159,13 +159,13 @@ Build a sustainable waste management platform that creates environmental impact 
 - **Goal**: 10,000 users, product-market fit
 - **Approach**: Minimal costs, open-source infrastructure
 
-### Seed Round (Q3 2024)
+### Seed Round (Q3 2026)
 - **Target**: $50K-100K
 - **Use**: Team expansion, marketing, infrastructure
 - **Investors**: Angel investors, climate tech VCs
 - **Equity**: 10-15%
 
-### Series A (2025)
+### Series A (2026)
 - **Target**: $500K-1M
 - **Use**: Multi-city expansion, custom ML model
 - **Investors**: Impact investors, VCs
@@ -320,5 +320,5 @@ Build a sustainable waste management platform that creates environmental impact 
 
 ---
 
-**Last Updated**: January 2024
-**Next Review**: April 2024
+**Last Updated**: January 2026
+**Next Review**: April 2026

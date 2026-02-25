@@ -113,5 +113,5 @@ Track these metrics in production:
 
 ---
 
-**Last Updated**: January 2024
-**Next Review**: February 2024
+**Last Updated**: January 2025
+**Next Review**: February 2025

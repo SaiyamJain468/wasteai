@@ -122,7 +122,7 @@ India generates **62 million tonnes** of waste annually, with only **43 million 
 
 ### Classification Accuracy
 - **Current**: 95% accuracy
-- **Target**: 98% accuracy by Q4 2024
+- **Target**: 98% accuracy by Q4 2026
 - **Metric**: User feedback validation
 
 ### Environmental Impact
@@ -220,25 +220,25 @@ India generates **62 million tonnes** of waste annually, with only **43 million 
 
 ## 🔮 Future Roadmap
 
-### Q2 2024
+### Q2 2026
 - [ ] Mobile app (iOS/Android)
 - [ ] Hindi language support
 - [ ] 10 new Delhi wards
 - [ ] Partnership with 3 RWAs
 
-### Q3 2024
+### Q3 2026
 - [ ] Custom ML model (98% accuracy)
 - [ ] Blockchain rewards system
 - [ ] Municipal dashboard
 - [ ] 50,000 users milestone
 
-### Q4 2024
+### Q4 2026
 - [ ] Expand to Mumbai, Bangalore
 - [ ] IoT smart bin integration
 - [ ] AR waste scanning
 - [ ] Enterprise SaaS launch
 
-### 2025
+### 2026
 - [ ] Pan-India expansion
 - [ ] Government partnerships
 - [ ] Carbon credit marketplace

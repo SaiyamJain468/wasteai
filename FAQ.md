@@ -12,7 +12,7 @@ Yes! WasteAI is completely free and open-source under the MIT License. You can u
 Yes! After the initial load, WasteAI works completely offline. The AI model runs in your browser, so no internet connection is needed for classification.
 
 ### Which cities does WasteAI support?
-Currently, WasteAI is optimized for Delhi NCR with ward-specific features. We plan to expand to other Indian cities in 2024.
+Currently, WasteAI is optimized for Delhi NCR with ward-specific features. We plan to expand to other Indian cities in 2025.
 
 ## Technical Questions
 
@@ -32,7 +32,7 @@ WasteAI supports JPG, PNG, and WEBP formats. Maximum file size is 5MB.
 Classification typically takes less than 2 seconds, including image preprocessing and model inference.
 
 ### Can I use WasteAI on mobile devices?
-Yes! WasteAI is mobile-first and works on all modern smartphones. A native mobile app is planned for Q2 2024.
+Yes! WasteAI is mobile-first and works on all modern smartphones. A native mobile app is planned for Q2 2025.
 
 ## Privacy & Security
 
@@ -157,21 +157,21 @@ Yes! See our [API Documentation](API_DOCUMENTATION.md) for details.
 Yes! We're actively seeking municipal partnerships. Contact us for pilot programs.
 
 ### Is there a commercial version?
-We're developing enterprise features (SaaS platform, municipal dashboard) planned for Q4 2024.
+We're developing enterprise features (SaaS platform, municipal dashboard) planned for Q4 2025.
 
 ## Roadmap & Future
 
 ### When will the mobile app launch?
-Native mobile apps (iOS/Android) are planned for Q2 2024.
+Native mobile apps (iOS/Android) are planned for Q2 2025.
 
 ### Will you support other languages?
-Hindi language support is coming in Q2 2024. More languages will follow based on demand.
+Hindi language support is coming in Q2 2025. More languages will follow based on demand.
 
 ### What about blockchain rewards?
-Blockchain-based rewards system is planned for Q3 2024, allowing users to earn and trade carbon credits.
+Blockchain-based rewards system is planned for Q3 2025, allowing users to earn and trade carbon credits.
 
 ### Will you expand to other cities?
-Yes! Multi-city expansion is planned for Q3 2024, starting with Mumbai and Bangalore.
+Yes! Multi-city expansion is planned for Q3 2025, starting with Mumbai and Bangalore.
 
 ## Support
 

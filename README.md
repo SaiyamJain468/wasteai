@@ -233,7 +233,7 @@ vercel --prod
 - [x] Education hub
 - [x] Offline mode
 
-### Phase 2: Growth 🚧 (Q2 2024)
+### Phase 2: Growth 🚧 (Q2 2025)
 - [ ] Mobile app (React Native)
 - [ ] Hindi language support
 - [ ] Push notifications
@@ -241,7 +241,7 @@ vercel --prod
 - [ ] Social sharing
 - [ ] Rewards redemption
 
-### Phase 3: Scale 📅 (Q3 2024)
+### Phase 3: Scale 📅 (Q3 2025)
 - [ ] Custom ML model (98% accuracy)
 - [ ] Blockchain rewards
 - [ ] IoT smart bin integration
@@ -249,7 +249,7 @@ vercel --prod
 - [ ] Multi-city expansion
 - [ ] Government integration
 
-### Phase 4: Enterprise 🔮 (Q4 2024)
+### Phase 4: Enterprise 🔮 (Q4 2025)
 - [ ] SaaS platform
 - [ ] Municipal dashboard
 - [ ] API marketplace
@@ -376,7 +376,7 @@ See [Deployment Guide](DEPLOYMENT.md) for detailed instructions.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```
-MIT License - Copyright (c) 2024 Saiyam Jain
+MIT License - Copyright (c) 2025 Saiyam Jain
 Free to use, modify, and distribute with attribution.
 ```
 

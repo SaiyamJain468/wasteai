@@ -495,4 +495,4 @@ For deployment issues:
 
 ---
 
-**Last Updated**: January 2024
+**Last Updated**: January 2025

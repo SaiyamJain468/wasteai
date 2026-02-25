@@ -109,7 +109,7 @@ Include:
 
 | Date | Auditor | Findings | Status |
 |------|---------|----------|--------|
-| 2024-01-15 | Internal | Initial security review | Completed |
+| 2025-01-15 | Internal | Initial security review | Completed |
 
 ## Compliance
 
@@ -126,4 +126,4 @@ For general issues: [GitHub Issues](https://github.com/SaiyamJain468/wasteai/iss
 
 ---
 
-**Last Updated**: January 2024
+**Last Updated**: January 2025
