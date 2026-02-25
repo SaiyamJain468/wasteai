@@ -196,7 +196,7 @@ export default function EducationHub() {
                       : colors.border
                   }`,
                   fontSize: '16px',
-                  fontWeight: 700,
+                  fontWeight: 700,  
                   color: showCorrect
                     ? colors.organicText
                     : showWrong
