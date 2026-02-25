@@ -402,5 +402,5 @@ For queries or support, reach out via GitHub issues or email.
 <div align="center">
   <strong>Built with ❤️ for a cleaner Delhi NCR</strong>
   <br>
-  <sub>© 2024 SaiyamJain468. All rights reserved.</sub>
+  <sub>© 2026 SaiyamJain468. All rights reserved.</sub>
 </div>

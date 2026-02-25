@@ -17,17 +17,29 @@ export default defineConfig(({mode}) => {
     build: {
       outDir: 'dist',
       sourcemap: false,
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        },
+      },
       rollupOptions: {
         output: {
           manualChunks: {
             'tensorflow': ['@tensorflow/tfjs', '@tensorflow-models/mobilenet'],
             'vendor': ['react', 'react-dom', 'react-router-dom'],
+            'charts': ['recharts'],
           },
         },
       },
+      chunkSizeWarningLimit: 600,
     },
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
+    },
+    optimizeDeps: {
+      include: ['react', 'react-dom', 'react-router-dom'],
     },
   };
 });
