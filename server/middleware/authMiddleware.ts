@@ -30,3 +30,4 @@ const protect = async (req: AuthRequest, res: Response, next: NextFunction) => {
 };
 
 export { protect };
+export const authMiddleware = protect;

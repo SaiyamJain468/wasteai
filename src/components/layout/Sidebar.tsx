@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, History, Trophy, BarChart3, HelpCircle, TrendingUp, User, LogOut } from 'lucide-react';
+import { Home, History, Trophy, BarChart3, HelpCircle, TrendingUp, User, LogOut, Store, Gamepad2 } from 'lucide-react';
 import { useTheme } from '../../hooks/useTheme';
 import { useAuth } from '../../context/AuthContext';
 
@@ -15,6 +15,8 @@ export default function Sidebar() {
     { to: '/dashboard', icon: BarChart3, label: 'DASHBOARD' },
     { to: '/quiz', icon: HelpCircle, label: 'QUIZ' },
     { to: '/impact', icon: TrendingUp, label: 'IMPACT' },
+    { to: '/marketplace', icon: Store, label: 'MARKETPLACE' },
+    { to: '/ar-game', icon: Gamepad2, label: 'AR GAME' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

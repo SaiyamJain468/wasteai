@@ -16,6 +16,8 @@ const Signup = lazy(() => import('./pages/Signup'));
 const ImpactReport = lazy(() => import('./pages/ImpactReport'));
 const EducationHub = lazy(() => import('./pages/EducationHub'));
 const Profile = lazy(() => import('./pages/Profile'));
+const Marketplace = lazy(() => import('./pages/Marketplace'));
+const ARGame = lazy(() => import('./pages/ARGame'));
 
 const LoadingFallback = () => (
   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
@@ -59,6 +61,8 @@ export default function App() {
                 <Route path="/impact" element={<ProtectedRoute><ImpactReport /></ProtectedRoute>} />
                 <Route path="/quiz" element={<ProtectedRoute><EducationHub /></ProtectedRoute>} />
                 <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+                <Route path="/marketplace" element={<ProtectedRoute><Marketplace /></ProtectedRoute>} />
+                <Route path="/ar-game" element={<ProtectedRoute><ARGame /></ProtectedRoute>} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </Suspense>

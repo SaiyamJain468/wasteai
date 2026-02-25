@@ -12,6 +12,7 @@ import authRoutes from './server/routes/authRoutes';
 import wasteRoutes from './server/routes/wasteRoutes';
 import classifyRoutes from './server/routes/classifyRoutes';
 import leaderboardRoutes from './server/routes/leaderboardRoutes';
+import marketplaceRoutes from './server/routes/marketplaceRoutes';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -49,6 +50,7 @@ async function startServer() {
   app.use('/api/waste', wasteRoutes);
   app.use('/api/classify', classifyRoutes);
   app.use('/api/leaderboard', leaderboardRoutes);
+  app.use('/api/marketplace', marketplaceRoutes);
 
   // Vite Middleware (for Development)
   if (process.env.NODE_ENV !== 'production') {

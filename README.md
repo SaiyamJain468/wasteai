@@ -73,6 +73,13 @@
 9. **Impact Report** - Downloadable environmental summary
 10. **Offline Mode** - Full functionality without internet
 
+### ✨ New Features (In Development)
+11. **Voice-Activated Scanning** 🎤 - Hands-free waste classification
+12. **Smart Push Notifications** 🔔 - Intelligent alerts and reminders
+13. **Batch Scanning** 📸 - Scan multiple items at once
+14. **Community Marketplace** 🛒 - Trade/sell recyclable materials
+15. **AR Waste Game** 🎮 - Educational augmented reality game
+
 ### 🏙️ Delhi NCR Integration
 - Ward-based leaderboards (Connaught Place, Dwarka, Rohini, etc.)
 - Real-time city-wide analytics
@@ -205,7 +212,7 @@ vercel --prod
 - **[Market Analysis](MARKET_ANALYSIS.md)** - Competitive landscape
 - **[Changelog](CHANGELOG.md)** - Version history
 - **[Security Policy](SECURITY.md)** - Security guidelines
-- **[Code of Conduct](CODE_OF_CONDUCT.md)** - Community guidelines
+- **[New Features Roadmap](NEW_FEATURES.md)** - Upcoming features and timeline
 
 ## 🎯 Success Metrics
 
@@ -233,19 +240,22 @@ vercel --prod
 - [x] Education hub
 - [x] Offline mode
 
-### Phase 2: Growth 🚧 (Q2 2025)
+### Phase 2: Growth 🚧 (Q1-Q2 2025)
+- [ ] **Voice-Activated Scanning** ✨ - Hands-free waste classification
+- [ ] **Smart Push Notifications** ✨ - Streak reminders & alerts
+- [ ] **Batch Scanning** ✨ - Scan multiple items with object detection
 - [ ] Mobile app (React Native)
 - [ ] Hindi language support
-- [ ] Push notifications
 - [ ] Advanced analytics
 - [ ] Social sharing
 - [ ] Rewards redemption
 
-### Phase 3: Scale 📅 (Q3 2025)
+### Phase 3: Scale 📅 (Q2-Q3 2025)
+- [ ] **Community Waste Marketplace** ✨ - Trade/sell recyclables
+- [ ] **AR Waste Sorting Game** ✨ - Educational AR experience
 - [ ] Custom ML model (98% accuracy)
 - [ ] Blockchain rewards
 - [ ] IoT smart bin integration
-- [ ] AR waste scanning
 - [ ] Multi-city expansion
 - [ ] Government integration
 

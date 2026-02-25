@@ -41,8 +41,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const savedUser = localStorage.getItem('wasteai_user');
+    const savedToken = localStorage.getItem('token');
     if (savedUser) {
-      setUser(JSON.parse(savedUser));
+      const parsedUser = JSON.parse(savedUser);
+      setUser(parsedUser);
+      // Ensure token is in localStorage
+      if (!savedToken && parsedUser.token) {
+        localStorage.setItem('token', parsedUser.token);
+      }
     }
     setLoading(false);
   }, []);
@@ -52,12 +58,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     if (demoUser && demoUser.password === userData.password) {
       const user = {
         _id: demoUser._id,
+        id: demoUser._id,
         name: demoUser.name,
         email: demoUser.email,
         ward: demoUser.ward,
         token: 'demo-token-' + demoUser._id,
       };
       localStorage.setItem('wasteai_user', JSON.stringify(user));
+      localStorage.setItem('token', user.token);
       setUser(user);
     } else {
       throw new Error('Invalid credentials');
@@ -67,17 +75,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const register = async (userData: any) => {
     const user = {
       _id: Date.now().toString(),
+      id: Date.now().toString(),
       name: userData.name,
       email: userData.email,
       ward: userData.ward,
       token: 'demo-token-' + Date.now(),
     };
     localStorage.setItem('wasteai_user', JSON.stringify(user));
+    localStorage.setItem('token', user.token);
     setUser(user);
   };
 
   const logout = () => {
     localStorage.removeItem('wasteai_user');
+    localStorage.removeItem('token');
     setUser(null);
   };
 
