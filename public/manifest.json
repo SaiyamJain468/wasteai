@@ -1,0 +1,35 @@
+{
+  "name": "WasteAI - Smart Waste Classification",
+  "short_name": "WasteAI",
+  "description": "AI-powered waste classification for Delhi NCR. 95% accuracy, offline-first.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#00FFB2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "productivity", "lifestyle"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Classify Waste",
+      "short_name": "Classify",
+      "description": "Start classifying waste immediately",
+      "url": "/classify",
+      "icons": [{ "src": "/icon-96.png", "sizes": "96x96" }]
+    }
+  ]
+}
